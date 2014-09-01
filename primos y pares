@@ -1,0 +1,34 @@
+function buscarNumeros(){
+	var a = new Array(6);
+	var indice = 0;
+
+	do{
+		a[indice] = prompt('Digite el numero ' + (indice + 1) + ': ', '');
+		indice++;
+	}while(indice<6);
+
+	indice = 0;
+	do
+	{
+		console.log(a[indice] + 'este numero es');
+
+	 	if (a[indice] % 2 == 0) {
+	 		console.log('par, ');
+	 	}
+
+	 	if (a[indice]>2) {
+			var conta = 2;
+			var result = true;
+
+			while(result && conta!=a[indice])
+			{
+				if ((a[indice] % cont) == 0) {
+					result = false;
+			 	}
+			 	conta = conta + 1;
+			}
+
+			if (result == true) {
+				console.log('primo, ');
+			}
+		}
